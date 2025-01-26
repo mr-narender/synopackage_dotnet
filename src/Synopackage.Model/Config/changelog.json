@@ -1,5 +1,16 @@
 ﻿[
   {
+    "version": "1.2.2",
+    "date": "2024-12-30",
+    "new": [],
+    "improved": [
+      "Cache headers for main resource index.html",
+      "Add support synopackage banner to main pages"
+    ],
+    "fixed": [],
+    "removedSources": []
+  },
+  {
     "version": "1.2.1",
     "date": "2024-12-28",
     "new": [],
