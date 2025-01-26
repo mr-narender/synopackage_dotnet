@@ -3,6 +3,15 @@
 </nav>
 <app-removed-subdomain-info></app-removed-subdomain-info>
 <h1>Third party package sources</h1>
+<div class="container mt-5">
+  <div class="coffee-banner">
+    <h3>Support Synopackage!</h3>
+    <p>If you find my content helpful, consider buying me a coffee to keep me going!</p>
+    <a href="https://www.buymeacoffee.com/synopackage" target="_blank"><img
+        src="https://img.buymeacoffee.com/button-api/?text=Support&emoji=&slug=synopackage&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+    <br /> <br /> <a href="https://github.com/sponsors/szyb" target="_blank">❤ Github sponsors ❤</a>
+  </div>
+</div>
 <div *ngIf="!sources">
   <app-wait></app-wait>
 </div>
@@ -29,9 +38,11 @@
     <div class="d-none d-md-inline-block          col-md-3 mt-1">{{ source.name }}</div>
     <div class="d-none d-sm-inline-block col-sm-8 col-md-6 mt-1 url_word_break">
       <a routerLink="/sources/{{source.name}}">{{ source.displayUrl }}</a>
-      <app-copy-to-clipboard [urlToCopy]="source.displayUrl" [tooltipSuffix]="source.name" *ngIf="!source.isOfficial"></app-copy-to-clipboard>
+      <app-copy-to-clipboard [urlToCopy]="source.displayUrl" [tooltipSuffix]="source.name"
+        *ngIf="!source.isOfficial"></app-copy-to-clipboard>
     </div>
-    <div class="d-none d-sm-inline-block col-sm-2 col-md-1 mt-1 center_column" *ngIf="source.www != null" style="word-break: break-all">
+    <div class="d-none d-sm-inline-block col-sm-2 col-md-1 mt-1 center_column" *ngIf="source.www != null"
+      style="word-break: break-all">
       <a href="{{ source.www }}" target="_blank" rel="noopener noreferrer">
         <mdb-icon fas icon="external-link-alt" aria-hidden="true"></mdb-icon>
       </a>
@@ -41,13 +52,15 @@
         <mdb-icon fas icon="external-link-alt" aria-hidden="true"></mdb-icon>
       </a>
     </div>
-    <div class="d-none d-sm-inline-block col-sm-2 col-md-2 center_column" *ngIf="source.isHealthy && isHealthChecksEnabled">
+    <div class="d-none d-sm-inline-block col-sm-2 col-md-2 center_column"
+      *ngIf="source.isHealthy && isHealthChecksEnabled">
       <div class="tooltip2">
         <span class="tooltiptext">Looks good!</span>
         <mdb-icon fas icon="check-circle" class="hc_ok_status_icon" aria-hidden="true"></mdb-icon>
       </div>
     </div>
-    <div class="d-none d-sm-inline-block col-sm-2 col-md-2 center_column" *ngIf="!source.isHealthy && isHealthChecksEnabled">
+    <div class="d-none d-sm-inline-block col-sm-2 col-md-2 center_column"
+      *ngIf="!source.isHealthy && isHealthChecksEnabled">
       <div class="tooltip2">
         <span class="tooltiptext">{{ source.healthCheckDescription }}</span>
         <mdb-icon fas icon="exclamation-triangle" class="hc_degraded_status_icon" aria-hidden="true"></mdb-icon>
@@ -67,7 +80,8 @@
     <div class="d-inline-block d-sm-none mt-1 font-weight-bold">url</div>
     <div class="d-none d-md-inline-block           col-md-3 col-lg-2 mt-1 font-weight-bold">name</div>
     <div class="d-none d-sm-inline-block col-sm-11 col-md-8 col-lg-5 col-xl-4 mt-1 font-weight-bold">url</div>
-    <div class="d-none d-lg-inline-block                    col-lg-4 col-xl-5 mt-1 font-weight-bold">disabled reason</div>
+    <div class="d-none d-lg-inline-block                    col-lg-4 col-xl-5 mt-1 font-weight-bold">disabled reason
+    </div>
     <div class="d-none d-sm-inline-block col-sm-1  col-md-1 mt-1 font-weight-bold center_column">link</div>
   </div>
   <div *ngIf="inactiveSources">

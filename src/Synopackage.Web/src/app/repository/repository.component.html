@@ -5,15 +5,27 @@
 <h1>Synopackage Proxy Repository<img src="assets/beta.png" alt="beta" class="pr-2 pl-1" /></h1>
 <div class="cloudy-knoxville-gradient z-depth-2 rounded mb-1 pd-3 ng-star-inserted ">
   <p class="p-3">
-    <span class="font-weight-bold">Synopackage Proxy Repository</span> is an intermediary server between DSM and active source servers.
-    It allows you to add a single repository link in your Package Center and get packages from all active repositories (or from some subset).
+    <span class="font-weight-bold">Synopackage Proxy Repository</span> is an intermediary server between DSM and active
+    source servers.
+    It allows you to add a single repository link in your Package Center and get packages from all active repositories
+    (or from some subset).
     <span class="font-weight-bold">All you need to do is to add the link to your Package Center. </span>
     <br /><br /><span class="font-italic">Please note that this feature is still in beta phase.</span>
   </p>
 </div>
+<div class="container mt-5">
+  <div class="coffee-banner">
+    <h3>Support Synopackage!</h3>
+    <p>If you find my content helpful, consider buying me a coffee to keep me going!</p>
+    <a href="https://www.buymeacoffee.com/synopackage" target="_blank"><img
+        src="https://img.buymeacoffee.com/button-api/?text=Support&emoji=&slug=synopackage&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+    <br /> <br /> <a href="https://github.com/sponsors/szyb" target="_blank">❤ Github sponsors ❤</a>
+  </div>
+</div>
 <div *ngIf="!repoDetails">
   <app-wait></app-wait>
 </div>
+
 <div *ngIf="repoDetails">
 
   <div *ngFor="let repo of repoDetails.details" class="pb-3">
@@ -35,7 +47,8 @@
     </div>
   </div>
   <p class="rounded border px-2 py-2">
-    *Listed repositories are based on your settings (DSM version). They may be different when you add it to the Package Center.
+    *Listed repositories are based on your settings (DSM version). They may be different when you add it to the Package
+    Center.
     Moreover list of active repositories is changing from time to time.
   </p>
 </div>

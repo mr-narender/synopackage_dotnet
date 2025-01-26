@@ -5,3 +5,38 @@
 .url_word_break {
   word-break: break-all
 }
+
+.coffee-banner {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-banner h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.coffee-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.coffee-btn {
+  background-color: #ffb347;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.coffee-btn:hover {
+  background-color: #ff9a33;
+  transform: scale(1.05);
+}
