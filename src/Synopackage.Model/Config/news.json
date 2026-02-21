@@ -1,5 +1,18 @@
 [
   {
+    "Date": "2026-02-21",
+    "Title": "Adding DSM 7.3.x and bunch of new models",
+    "Body": [
+      "Today we released a new version. It supports now DSM 7.3.x and some new models. See changelog for details.",
+      "We also would like to ask you for a help to get some funds for further running synopackage online. See the link below and support (if you can) by buying a coffee.",
+      "Enjoy!"
+    ],
+    "RouterLinkDescription": null,
+    "RouterLink": null,
+    "ExternalLinkDescription": "https://buymeacoffee.com/synopackage",
+    "ExternalLink": "https://buymeacoffee.com/synopackage"
+  },
+  {
     "Date": "2024-12-27",
     "Title": "Synopackage needs your help!",
     "Body": [
