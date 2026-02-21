@@ -80,7 +80,7 @@ namespace Synopackage
           "text/plain",
           "text/css",
           "application/javascript",
-          "text/html",
+          //"text/html",
           "application/xml",
           "text/xml",
           "application/json",
@@ -195,6 +195,27 @@ namespace Synopackage
       }
 
       app.UseMiddleware<RepositoryRedirectMiddleware>();
+
+
+      app.Use(async (context, next) =>
+      {
+        if (context.Request.Path == "/" || context.Request.Path == "/index.html")
+        {
+          if (this.IsProductionOrTest())
+          {
+            context.Response.Headers.CacheControl = "public, max-age=14400"; // 4h
+          }
+          else //dev or docker
+          {
+            context.Response.Headers.CacheControl = "no-cache, no-store, must-revalidate";
+            context.Response.Headers.Pragma = "no-cache";
+            context.Response.Headers.Expires = "0";
+          }
+        }
+
+        await next();
+      });
+
       app.UseDefaultFiles();
       app.UseResponseCompression();
 
@@ -205,7 +226,21 @@ namespace Synopackage
           if (ctx.File.PhysicalPath.EndsWith(".woff2"))
           {
             const int durationInSeconds = 60 * 60 * 24 * 30; //30 days
-            ctx.Context.Response.Headers[HeaderNames.CacheControl] = $"public,max-age={durationInSeconds}";
+            ctx.Context.Response.Headers[HeaderNames.CacheControl] = $"public, max-age={durationInSeconds}";
+          }
+          else if (ctx.File.PhysicalPath.EndsWith("index.html"))
+          {
+            if (this.IsProductionOrTest())
+            {
+              ctx.Context.Response.Headers.CacheControl = "public, max-age=14400"; // 4h
+            }
+            else
+            {
+              //dev or docker => no cache
+              ctx.Context.Response.Headers.CacheControl = "no-cache, no-store, must-revalidate";
+              ctx.Context.Response.Headers.Pragma = "no-cache";
+              ctx.Context.Response.Headers.Expires = "0";
+            }
           }
         }
       });
@@ -218,27 +253,9 @@ namespace Synopackage
       {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Synopackage.com API V1");
       });
+
       app.UseSpaStaticFiles();
       app.UseRouting();
-
-      app.Use(async (context, next) =>
-      {
-        if (!Path.HasExtension(context.Request.Path.Value)
-          && !context.Request.Path.StartsWithSegments(new PathString("/api"))
-          && !context.Request.Path.StartsWithSegments(new PathString("/repository/spk"))
-          && !context.Request.Path.StartsWithSegments(new PathString("/health"))
-          && !context.Request.Path.StartsWithSegments(new PathString("/notification")))
-        {
-          context.Request.Path = "/index.html";
-          context.Response.Headers.Append("Cache-Control", "no-store,no-cache");
-          context.Response.Headers.Append("Pragma", "no-cache");
-          await next();
-        }
-        else
-          await next();
-      });
-
-
 
       // CORS
       app.UseCors(config =>

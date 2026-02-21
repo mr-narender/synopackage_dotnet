@@ -1093,5 +1093,100 @@
     "Name": "DS124",
     "Arch": "rtd1619b",
     "Family": "armv8"
+  },
+  {
+    "Name": "DS225+",
+    "Arch": "geminilakenk",
+    "Family": "geminilakenk"
+  },
+  {
+    "Name": "DS425+",
+    "Arch": "geminilakenk",
+    "Family": "geminilakenk"
+  },
+  {
+    "Name": "DS725+",
+    "Arch": "r1000nk",
+    "Family": "r1000nk"
+  },
+  {
+    "Name": "DS925+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "DS1525+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "DS1825+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "RS2825RP+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "FS6400",
+    "Arch": "purley",
+    "Family": "purley"
+  },
+  {
+    "Name": "FS3600",
+    "Arch": "broadwellnk",
+    "Family": "broadwellnk"
+  },
+  {
+    "Name": "FS3410",
+    "Arch": "broadwellnkv2",
+    "Family": "broadwellnkv2"
+  },
+  {
+    "Name": "FS3400",
+    "Arch": "broadwell",
+    "Family": "broadwell"
+  },
+  {
+    "Name": "HD6500",
+    "Arch": "purley",
+    "Family": "purley"
+  },
+  {
+    "Name": "SA6400",
+    "Arch": "epyc7002",
+    "Family": "epyc7002"
+  },
+  {
+    "Name": "SA3610",
+    "Arch": "broadwellnkv2",
+    "Family": "broadwellnkv2"
+  },
+  {
+    "Name": "SA3600",
+    "Arch": "broadwell",
+    "Family": "broadwell"
+  },
+  {
+    "Name": "SA3410",
+    "Arch": "broadwellnkv2",
+    "Family": "broadwellnkv2"
+  },
+  {
+    "Name": "SA3400",
+    "Arch": "broadwell",
+    "Family": "broadwell"
+  },
+  {
+    "Name": "SA3400D",
+    "Arch": "broadwellntbap",
+    "Family": "broadwellntbap"
+  },
+  {
+    "Name": "SA3200D",
+    "Arch": "broadwellntbap",
+    "Family": "broadwellntbap"
   }
 ]

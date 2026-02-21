@@ -57,6 +57,7 @@ namespace Synopackage.Model.Services
       if (!cacheResult.HasValidCache)
       {
         string unique = $"synology_{arch}_{model}"; //TODO: DSM provide model without leading "DS" or "RS", so we should do the same some day.
+                                                    //EDIT: 2026-02-21: models from 25+ series now provides DS as a prefix.
         var parametersRequest = PrepareParametersForRequest(arch, unique, versionDto, isBeta, customUserAgent, out var userAgent);
 
         IDownloadService downloadService = downloadFactory.GetDefaultDownloadService();

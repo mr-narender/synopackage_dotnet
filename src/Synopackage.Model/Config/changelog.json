@@ -1,5 +1,27 @@
 ﻿[
   {
+    "version": "1.2.3",
+    "date": "2026-02-21",
+    "new": [],
+    "improved": [
+      "Add new DSM versions: 7.3, 7.3.1, 7.3.2",
+      "Add new models: DS225+, DS425+, DS725+, DS925+, DS1525+, DS1825+, RS2825RP+, FS6400, FS3600, FS3410, FS3400, HD6500, SA6400, SA3610, SA3600, SA3410, SA3400, SA3400D, SA3200D"
+    ],
+    "fixed": [],
+    "removedSources": []
+  },
+  {
+    "version": "1.2.2",
+    "date": "2024-12-30",
+    "new": [],
+    "improved": [
+      "Cache headers for main resource index.html",
+      "Add support synopackage banner to main pages"
+    ],
+    "fixed": [],
+    "removedSources": []
+  },
+  {
     "version": "1.2.1",
     "date": "2024-12-28",
     "new": [],
