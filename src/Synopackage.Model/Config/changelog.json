@@ -1,5 +1,15 @@
 ﻿[
   {
+    "version": "1.2.4",
+    "date": "2026-04-01",
+    "new": [],
+    "improved": [],
+    "fixed": [],
+    "removedSources": [
+      "cphub - no response from server"
+    ]
+  },
+  {
     "version": "1.2.3",
     "date": "2026-02-21",
     "new": [],
