@@ -53,6 +53,12 @@
   },
   {
     "Active": true,
+    "Name": "007revad",
+    "Url": "https://spkrepo.007daver.workers.dev/",
+    "SynopackageChoice": true
+  },
+  {
+    "Active": true,
     "Name": "pcloadletter",
     "Url": "https://packages.pcloadletter.co.uk",
     "UseGetMethod": true
