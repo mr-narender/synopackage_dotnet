@@ -775,6 +775,11 @@
     "Family": "x86_64"
   },
   {
+    "Name": "FS2500",
+    "Arch": "v1000",
+    "Family": "x86_64"
+  },
+  {
     "Name": "VirtualDSM",
     "Arch": "kvmx64",
     "Family": "x86_64"
@@ -858,6 +863,11 @@
     "Name": "FS1018",
     "Arch": "broadwellnk",
     "Family": "x86_64"
+  },
+  {
+    "Name": "FS200T",
+    "Arch": "geminilakenk",
+    "Family": "geminilakenk"
   },
   {
     "Name": "RS2818RP+",
@@ -1135,9 +1145,19 @@
     "Family": "purley"
   },
   {
+    "Name": "FS6420",
+    "Arch": "epyc7003",
+    "Family": "epyc7003"
+  },
+  {
     "Name": "FS3600",
     "Arch": "broadwellnk",
     "Family": "broadwellnk"
+  },
+  {
+    "Name": "FS3420",
+    "Arch": "icelaked",
+    "Family": "x86_64"
   },
   {
     "Name": "FS3410",
@@ -1188,5 +1208,45 @@
     "Name": "SA3200D",
     "Arch": "broadwellntbap",
     "Family": "broadwellntbap"
+  },
+  {
+    "Name": "RS6426xs+",
+    "Arch": "icelaked",
+    "Family": "x86_64"
+  },
+  {
+    "Name": "RS4826xs+",
+    "Arch": "icelaked",
+    "Family": "x86_64"
+  },
+  {
+    "Name": "RS3626xs+",
+    "Arch": "icelaked",
+    "Family": "x86_64"
+  },
+  {
+    "Name": "RS1626xs+",
+    "Arch": "icelaked",
+    "Family": "x86_64"
+  },
+  {
+    "Name": "RS1226+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "RS1226RP+",
+    "Arch": "v1000nk",
+    "Family": "v1000nk"
+  },
+  {
+    "Name": "RS826+",
+    "Arch": "v1000",
+    "Family": "x86_64"
+  },
+  {
+    "Name": "RS826RP+",
+    "Arch": "v1000",
+    "Family": "x86_64"
   }
 ]

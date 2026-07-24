@@ -1,5 +1,18 @@
 ﻿[
   {
+    "version": "1.2.6",
+    "date": "2026-07-24",
+    "new": [
+      "Add new DSM versions: 7.4, 7.4.1",
+      "Add new models: FS2500, FS200T, FS6420, FS3420, RS6426xs+, RS4826xs+, RS3626xs+, RS1626xs+, RS1226+, RS1226RP+, RS826+, RS826RP+, RS826+, RS826RP+"
+    ],
+    "improved": [],
+    "fixed": [
+      "Fixed retrieving data from imnks source"
+    ],
+    "removedSources": []
+  },
+  {
     "version": "1.2.5",
     "date": "2026-05-17",
     "new": [
