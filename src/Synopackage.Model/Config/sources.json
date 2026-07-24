@@ -232,7 +232,8 @@
     "Www": "https://spk7.imnks.com",
     "MinMajorVersion": 7,
     "Info": "This source server does not allow to download packages directly from the browser. Downloading is possible only from DSM Package Center.",
-    "IsDownloadDisabled": true
+    "IsDownloadDisabled": true,
+    "UseGetMethod": true
   },
   {
     "Active": false,
